@@ -1,0 +1,262 @@
+:root {
+    --cor1: rgb(0, 0, 0);
+    --cor2: #c0beb7;
+    --cor3: #b2b0a7;
+    --cor4: #2a272c;
+    --cor5: #e3e1e4;
+    --cor6: #e3dfca;
+    --cor7: #7a7788;
+    --cor8: #5e5156;
+    --cor9: #676549;
+    --cor10: #8f8189;
+    --cor11: #545c54;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--cor5);
+} 
+
+.nav-bar {
+    background-color: var(--cor4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.nav-logo {
+    border-radius: 80px;
+    width: 5%;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-link {
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.nav-link:hover {
+    color: var(--cor3);
+    transition: 1s;
+}
+
+.cabecalho {
+    border: 2px solid rgb(0, 0, 0);
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/samurai3.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.texto-back {
+    margin-right: 54%;
+}
+
+.f1 {
+    font-size: 60px;
+    color: var(--cor4);
+    border-bottom: 2px solid #2a272c;
+}
+
+.f2 {
+    font-size: 20px;
+    color: var(--cor4);
+    margin-left: 280px;
+}
+
+.container1 {
+    align-items: center;
+    padding: 50px;
+    padding-left: 12%;
+}
+
+.borda {
+    padding: 10px;
+    background-color: var(--cor3);
+    width: 90%;
+    box-shadow: -5px 0px 3px black; 
+}
+
+.f3 {
+    font-size: 25px;
+    color: var();
+    margin-left: 2%;
+}
+
+.f4 {
+    font-size: 10px;
+    font-weight: bolder;
+    margin-left: 56%;
+}   
+
+.f5-p {
+    font-size: 17px;
+    margin-right: 10%;
+    line-height: 23px;
+}
+
+.borda01 {
+    padding: 10px;
+    background-color: var(--cor3);
+    width: 90%;
+    box-shadow: -5px 0px 3px black;
+}
+
+.f6-t {
+    font-size: 20px;
+    padding-left: 3%;
+}
+
+.f7-t {
+    font-size: 25px;
+    text-align: center;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.dobra {
+    border: 1px solid black;
+    width: 30%;
+    flex-direction: column;
+}
+
+.margemEmbaixo{
+    margin-bottom: 2%;
+}
+
+.container-cards {
+    background-color: var(--cor2);
+}
+
+.cards {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.card1 {
+    border: 1px solid var(--cor4);
+    width: 31%;
+    margin-bottom: 20px;
+}
+
+.card2 {
+    border: 1px solid var(--cor4);
+    width: 31%;
+    margin-bottom: 20px;
+}
+
+.card3 {
+    border: 1px solid var(--cor4);
+    width: 31%;
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 100%;
+}
+
+.texto {
+    margin: 20px 5px;
+    text-indent: 20px;
+    font-size: 15px;
+}
+
+.button {
+    float: right;
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+.button-in {
+    background-color: var(--cor4);
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+}
+
+.footer {
+    background-color: var(--cor4);
+    color: var(--cor5);
+    text-align: center;   
+    padding: 35px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    margin-right: 4px
+}
+
+@media (max-width: 780px) {
+    .cabecalho {
+        transition: 0.5s;
+        background-position: 40%;
+    }
+
+    .texto-back {
+        margin: 0 45% 6% 0;
+    }
+
+    .cards {
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center left;
+    }
+
+    .card1,
+    .card2,
+    .card3{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (max-width: 660px) {
+    .cabecalho {
+        transition: 0.5s;
+        background-position: 50%;
+    }
+
+    .texto-back {
+        margin: 0 auto;
+    }
+
+    .card1,
+    .card2,
+    .card3{
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+
+    
+
